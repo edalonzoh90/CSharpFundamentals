@@ -1,10 +1,18 @@
 ﻿namespace POOExample
 {
+    //BankAccout Abstraction
     public class BankAccount
     {
+        //Encapsulation of the components
+
         private static int accountNumberSeed = 1234567890;
+
         public string Number { get; }
+
         public string Owner { get; set; }
+
+        private List<Transaction> allTransactions = new List<Transaction>();
+
         public decimal Balance
         {
             get
@@ -19,16 +27,22 @@
             }
         }
 
-        public BankAccount(string name, decimal initialBalance)
+        // The value cannot be changed after the object is constructed
+        private readonly decimal _minimumBalance;
+
+        // Constructor chaining - One constructor call another
+        public BankAccount(string name, decimal initialBalance) : this(name, initialBalance, 0) { }
+
+        public BankAccount(string name, decimal initialBalance, decimal minimumBalance)
         {
             Number = accountNumberSeed.ToString();
             accountNumberSeed++;
 
             Owner = name;
-            MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
+            _minimumBalance = minimumBalance;
+            if (initialBalance > 0)
+                MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
         }
-
-        private List<Transaction> allTransactions = new List<Transaction>();
 
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
@@ -46,12 +60,24 @@
             {
                 throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
             }
-            if (Balance - amount < 0)
+            Transaction? overdraftTransaction = CheckWithdrawalLimit(Balance - amount < _minimumBalance);
+            Transaction? withdrawal = new(-amount, date, note);
+            allTransactions.Add(withdrawal);
+            if (overdraftTransaction != null)
+                allTransactions.Add(overdraftTransaction);
+        }
+
+        // Protected - Can be called only from derived classes. 
+        protected virtual Transaction? CheckWithdrawalLimit(bool isOverdrawn)
+        {
+            if (isOverdrawn)
             {
                 throw new InvalidOperationException("Not sufficient funds for this withdrawal");
             }
-            var withdrawal = new Transaction(-amount, date, note);
-            allTransactions.Add(withdrawal);
+            else
+            {
+                return default;
+            }
         }
 
         public string GetAccountHistory()
@@ -68,5 +94,10 @@
 
             return report.ToString();
         }
+
+        //A virtual method is a method where any derived class may choose to reimplement.
+        //The derived classes use the override keyword to define the new implementation.
+        public virtual void PerformMonthEndTransactions() { }
     }
 }
+
