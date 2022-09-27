@@ -19,15 +19,15 @@ namespace SOLIDExample
             client.Send(new MailMessage()); //Send a welcome email. 
         }
 
-        public void RegisterUser(string username)
+        public void RegisterUserSRP(string username)
         {
             if (username == "admin")
                 throw new InvalidOperationException();
-            /*
+
             _userRepository.Insert(...);
 
             _emailService.Send(...);
-            */
+
         }
     }
 }
