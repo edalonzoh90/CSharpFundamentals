@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{87E49676-9A25-446A-8948-E244CBF1F342}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		SOLID.md = SOLID.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExample", "InheritanceExample\InheritanceExample.csproj", "{4F7D68A8-6A6E-4BCF-B934-12549506C136}"
@@ -15,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExample2", "InheritanceExample2\InheritanceExample2.csproj", "{8F8D8E59-A317-4B16-86F8-1718861CF3CA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyConcepts", "KeyConcepts\KeyConcepts.csproj", "{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLIDExample", "SOLIDExample\SOLIDExample.csproj", "{7C980237-69D9-48A1-A826-391CF90876BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +41,10 @@ Global
 		{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C980237-69D9-48A1-A826-391CF90876BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C980237-69D9-48A1-A826-391CF90876BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C980237-69D9-48A1-A826-391CF90876BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C980237-69D9-48A1-A826-391CF90876BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
