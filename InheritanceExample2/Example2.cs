@@ -14,6 +14,11 @@ namespace InheritanceExample2
             return _value2;
         }
 
+        public override void Method3()
+        {
+            throw new NotImplementedException();
+        }
+
         //public int GetValue3()
         //{
         //    return _value3;
