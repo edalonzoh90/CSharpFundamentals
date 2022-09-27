@@ -1,5 +1,4 @@
-# C# Basic Concepts
-
+# C# Fundamentals
 ### Object Oriented Programming Principles
 - ***Abstraction*** Modeling the relevant attributes and interactions of entities as classes to define an abstract representation of a system.  
 - ***Encapsulation*** Hiding the internal state and functionality of an object and only allowing access through a public set of functions.  
@@ -22,7 +21,7 @@
 - ***Internal*** members are visible only in derived classes that are located in the same assembly as the base class
 - ***Public*** members are visible in derived classes and are part of the derived class public interface.
 
-### C# Concepts
+### C# Basic Concepts
 - ***Static constructors*** Initialize the static data of a class.
 - ***Instance constructors***  Create a new instance of the class
 - ***Finalizer*** Are called by the runtime's garbage collector to destroy instances of a class.
@@ -33,5 +32,7 @@
 - ***Anonymous Types*** Anonymous types are defined by their named data members.
 - ***Extension Methods*** You can "extend" a class without creating a derived class by creating a separate type. That type contains methods that can be called as if they belonged to the original type.
 - ***Implicitly Typed Local Variables*** Use implicit typing to instruct the compiler to determine a variable's type at compile time. 
+- ***Struct type*** is a value type that can encapsulate data and related functionality. Typically, you use structure types to design small data-centric types that provide little or no behavior.
+- ***Enum*** Is a value type defined by a set of named constants of the underlying integral numeric type. 
 
 [Documentation](https://learn.microsoft.com/es-es/dotnet/csharp/fundamentals/tutorials/classes)

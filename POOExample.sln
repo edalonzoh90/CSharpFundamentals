@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExample", "Inher
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceExample2", "InheritanceExample2\InheritanceExample2.csproj", "{8F8D8E59-A317-4B16-86F8-1718861CF3CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyConcepts", "KeyConcepts\KeyConcepts.csproj", "{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{8F8D8E59-A317-4B16-86F8-1718861CF3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F8D8E59-A317-4B16-86F8-1718861CF3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F8D8E59-A317-4B16-86F8-1718861CF3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC8AE42-2F1A-4262-9C61-1E0027D9F29E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
