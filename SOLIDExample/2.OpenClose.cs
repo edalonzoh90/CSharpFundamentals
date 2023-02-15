@@ -46,12 +46,12 @@
             return area;
         }
 
-        public double AreaOCP(Rectangle[] shapes)
+        public double AreaOCP(object[] shapes)
         {
             double area = 0;
             foreach (var shape in shapes)
             {
-                area += shape.Width * shape.Height;
+                area += shape.Area();
             }
 
             return area;
