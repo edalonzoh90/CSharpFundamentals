@@ -1,6 +1,10 @@
 # POO 
 
-# .NET  
+# .NET/ .NET Core  
+**1. Differences between .NET and .NET Core**  
+- Cross-platform compatibility  
+- Open-source
+- Size and performance
 
 # C#  
 
