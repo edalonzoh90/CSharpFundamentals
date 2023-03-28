@@ -1,4 +1,7 @@
 # POO 
+**1. Differences between Override and Overload**  
+- Method overloading is the process of defining multiple methods with the same name but with different parameters and/or return types.
+- Method overriding is the process of defining a method in a subclass that has the same name, return type, and parameters as a method in its parent class.
 
 # .NET/ .NET Core  
 **1. Differences between .NET and .NET Core**  
