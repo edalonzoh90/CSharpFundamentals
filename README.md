@@ -11,7 +11,7 @@
 - ***ReadOnly*** Indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class.
 - ***Constructor chaining*** Constructor Chaining is an approach where a constructor calls another constructor in the same or base class.
 - ***Sealed Class*** Prevents other classes from inheriting from it. 
-- ***Abstact Class*** It serves as a template that defines the members that each derived class must implement.
+- ***Abstract Class*** It serves as a template that defines the members that each derived class must implement.
 - ***Interface*** Contains definitions for a group of related functionalities that a non-abstract class or a struct must implement.
 - ***Virtual*** Is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class
 
