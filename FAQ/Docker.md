@@ -36,4 +36,14 @@ Image is built up from a series of layers of instructions. An image corresponds 
 Layer corresponds to an instruction of the image’s Dockerfile. The layer is also an image but it is the image of the instructions run.
 
 
+## Cheat sheet ##
+| Command | Description |
+| --- | --- |
+| `docker run` | Initialize a container |
+| `docker run - it [idcontainer]` | Initialize a container and expose an interactive session inside our container  |
+| `docker ps` | List running container |
+| `docker ps -a` | List history of created containers |
+
+
+
 
