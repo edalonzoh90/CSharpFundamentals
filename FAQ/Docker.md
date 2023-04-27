@@ -25,7 +25,15 @@ It's an area where the docker images are stored. Instead of converting the appli
 - Containerization
     - This helps developers to deploy multiple applications using the same operating system on a single virtual machine or server.
     - Containers ensure isolated environment/ user spaces are provided for running the applications. Any changes done within the container do not reflect on the host or other containers of the same host.
-    - Containers form abstraction of the application layer which means that each container constitutes a different application.
+    - Containers form abstraction of the application layer which means that each container constitutes a different application.  
+
+**7. Differentiate between COPY and ADD**  
+COPY provides just the basic support of copying local files into the container whereas ADD provides additional features like remote URL and tar extraction support.
+
+**8. Differences between a Image and Layer**  
+Image is built up from a series of layers of instructions. An image corresponds to the container and is used for speedy operation due to the caching mechanism of each step.
+
+Layer corresponds to an instruction of the image’s Dockerfile. The layer is also an image but it is the image of the instructions run.
 
 
 
