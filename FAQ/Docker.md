@@ -43,6 +43,7 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker ps` | List running container |
 | `docker ps -a` | List history of created containers |
 | `docker run <image>:<tag>` | Run a container |
+| `docker run -rm <image>:<tag>` | Run a container and delete when stop |
 | `docker run -it <image>:<tag>` | Run a container and connect to it |
 | `docker run -d <image>:<tag>` | Run a container in the background |
 | `docker start <image>:<tag>` | Run a container in the background |
@@ -51,6 +52,9 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker attach <container>` | Get container output |
 | `docker logs <container>` | Get container output history |
 | `docker logs -f <container>` | Get container output with history |
+| `docker rm <container>` | remove container |
+| `docker rmi <image>` | remove image |
+| `docker prune <image>` | remove all images |
 
 
 
