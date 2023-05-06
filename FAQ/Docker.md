@@ -55,6 +55,7 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker rm <container>` | remove container |
 | `docker rmi <image>` | remove image |
 | `docker prune <image>` | remove all images |
+| `docker inspect <image>` | Inspect the layers of a image |
 
 
 
