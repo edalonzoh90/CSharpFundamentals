@@ -39,14 +39,17 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 ## Cheat sheet ##
 | Command | Description |
 | --- | --- |
-| **Proccess Management** |
+| **Proccess Management** |--
+| `docker build -t <name>:<tag>` . | Create an image |
 | `docker ps` | List running container |
 | `docker ps -a` | List history of created containers |
 | `docker run <image>:<tag>` | Run a container |
-| `docker run -rm <image>:<tag>` | Run a container and delete when stop |
+| `docker run <image>:<tag>` --name <name> | Run a container adding a custom name |
+| `docker run --rm <image>:<tag>` | Run a container and delete when stop |
 | `docker run -it <image>:<tag>` | Run a container and connect to it |
 | `docker run -d <image>:<tag>` | Run a container in the background |
 | `docker start <image>:<tag>` | Run a container in the background |
+| `docker start -a -i <image>:<tag>` | Run a container in the background and interact with it |
 | `docker stop -d <container>` | Stop a container |
 | `docker kill <container>` | Kill a container |
 | `docker attach <container>` | Get container output |
