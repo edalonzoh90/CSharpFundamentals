@@ -64,7 +64,8 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker build -t <repository>/<image>` | Kind of stage changes |
 | `docker tage <local_image> <repository>/<image>` | Rename to match with an remote repository |
 | `docker push <repository>/<image>` | push to remote repository |
-
+| `docker pull <repository>/<image>` | pull image from remote repository |
+| `docker run <repository>/<image>` | pull image from remote and run it |
 
 
 
