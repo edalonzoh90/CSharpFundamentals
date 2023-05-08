@@ -57,7 +57,7 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker logs -f <container>` | Get container output with history |
 | `docker rm <container>` | remove container |
 | `docker rmi <image>` | remove image |
-| `docker prune <image>` | remove all images |
+| `docker image prune -a` | remove all images |
 | `docker inspect <image>` | Inspect the layers of a image |
 | **Images Repository** |--
 | `docker login` | Login to remote hub |
