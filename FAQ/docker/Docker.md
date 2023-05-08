@@ -59,6 +59,11 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker rmi <image>` | remove image |
 | `docker prune <image>` | remove all images |
 | `docker inspect <image>` | Inspect the layers of a image |
+| **Images Repository** |--
+| `docker login` | Login to remote hub |
+| `docker build -t <repository>/<image>` | Kind of stage changes |
+| `docker tage <local_image> <repository>/<image>` | Rename to match with an remote repository |
+| `docker push <repository>/<image>` | push to remote repository |
 
 
 
