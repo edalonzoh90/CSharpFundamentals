@@ -66,8 +66,12 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker push <repository>/<image>` | push to remote repository |
 | `docker pull <repository>/<image>` | pull image from remote repository |
 | `docker run <repository>/<image>` | pull image from remote and run it |
-
-
+| **Volumes** |--
+| `docker run -p 80:80 -d --name app -v -rm -v feedback:/app/feedback feedback-node`| correct way to create a volume
+|`docker volume ls`| list volume |
+|`docker volume prune`| remove all anonymous volume |
+|`docker volume rm <volume_name>`| remove specific volume |
+  
 
 
 
