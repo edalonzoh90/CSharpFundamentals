@@ -72,6 +72,8 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 |`docker volume ls`| list volume |
 |`docker volume prune`| remove all anonymous volume |
 |`docker volume rm <volume_name>`| remove specific volume |
+| **Bind mount** |--
+|`docker run -d -p 80:80 --rm --name feedback-app -v "/home/daniel/docker/node-app/logs/:/app/feedback/" feedback-node`| Create a Mount bind |
   
 
 
