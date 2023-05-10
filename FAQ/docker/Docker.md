@@ -68,11 +68,13 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker pull <repository>/<image>` | pull image from remote repository |
 | `docker run <repository>/<image>` | pull image from remote and run it |
 | **Volumes** |--
-| `docker run -p 80:80 -d --name app -v -rm -v feedback:/app/feedback feedback-node`| correct way to create a volume
 |`docker volume ls`| list volume |
 |`docker volume prune`| remove all anonymous volume |
 |`docker volume rm <volume_name>`| remove specific volume |
-| **Bind mount** |--
+|`docker run -v /app/data`| Create anonymous volume |
+|`docker run -v data:/app/data`| Create named volume |
+|`docker run -v /data:/app/data`| Create mount bind |
+| `docker run -p 80:80 -d --name app -v -rm -v feedback:/app/feedback feedback-node`| correct way to create a volume
 |`docker run -d -p 80:80 --rm --name feedback-app -v "/home/daniel/docker/node-app/logs/:/app/feedback/" feedback-node`| Create a Mount bind |
   
 
