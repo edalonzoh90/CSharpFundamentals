@@ -76,7 +76,15 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 |`docker run -v /data:/app/data`| Create mount bind |
 | `docker run -p 80:80 -d --name app -v -rm -v feedback:/app/feedback feedback-node`| correct way to create a volume
 |`docker run -d -p 80:80 --rm --name feedback-app -v "/home/daniel/docker/node-app/logs/:/app/feedback/" feedback-node`| Create a Mount bind |
+| **Networking** |--  
+|`host.docker.internal`| To connect to localhost service |
+|`docker network create favorites-net`| Create a new network |
+|`docker network ls`| List networks created |
+|```
+docker run -network my-network --name cont1 my-image
+docker run -network my-network --name cont2 my-other-image
+```| Running container in a network |
   
-
+  
 
 
