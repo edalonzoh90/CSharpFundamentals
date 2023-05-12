@@ -56,6 +56,7 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker logs <container>` | Get container output history |
 | `docker logs -f <container>` | Get container output with history |
 | `docker rm <container>` | remove container |
+| `docker rm -f $(docker ps -a -q)` | remove all container |
 | `docker rmi <image>` | remove image |
 | `docker image prune -a` | remove all images |
 | `docker inspect <image>` | Inspect the layers of a image |
@@ -66,8 +67,21 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker push <repository>/<image>` | push to remote repository |
 | `docker pull <repository>/<image>` | pull image from remote repository |
 | `docker run <repository>/<image>` | pull image from remote and run it |
-
-
-
+| **Volumes** |--
+| `docker volume ls` | list volume |
+| `docker volume prune` | remove all anonymous volume |
+| `docker volume rm <volume_name>` | remove specific volume |
+| `docker run -v /app/data` | Create anonymous volume |
+| `docker run -v data:/app/data` | Create named volume |
+| `docker run -v /data:/app/data` | Create mount bind |
+| `docker run -p 80:80 -d --name app -v -rm -v feedback:/app/feedback feedback-node`| correct way to create a volume
+| `docker run -d -p 80:80 --rm --name feedback-app -v "/home/daniel/docker/node-app/logs/:/app/feedback/" feedback-node` | Create a Mount bind |
+| **Networking** |--  
+| `host.docker.internal` | To connect to localhost service |
+| `docker network create favorites-net` | Create a new network |
+| `docker network ls` | List networks created |
+| `docker run -network my-network --name cont1 my-image` `docker run -network my-network --name cont2 my-other-image` | Running containers in the same network |
+  
+  
 
 
