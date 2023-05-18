@@ -50,6 +50,7 @@ Layer corresponds to an instruction of the image’s Dockerfile. The layer is al
 | `docker run -d <image>:<tag>` | Run a container in the background |
 | `docker start <image>:<tag>` | Run a container in the background |
 | `docker start -a -i <image>:<tag>` | Run a container in the background and interact with it |
+| `docker exec <container><command>` | Execute a command into a running container  |
 | `docker stop -d <container>` | Stop a container |
 | `docker kill <container>` | Kill a container |
 | `docker attach <container>` | Get container output |
