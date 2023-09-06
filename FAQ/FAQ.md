@@ -63,3 +63,11 @@ Write code that is easy to read, understand, and maintain. Not only functional b
 # Dependency Injection  
 **1. Describe what Dependency Injection means** <sub><sup><sub><sup>[NTD Software]</sup></sub></sup></sub>  
 Is a pattern that allows for loose coupling between classes and their dependencies. Dependency Injection involves injecting dependencies into a class rather than creating them within the class. This allows the class to be more flexible and reusable, as it can work with different dependencies without needing to be modified.
+
+# Testing  
+**1. Types of testing**
+- Unit Test - Test a class without external dependencies
+- Integration test - Test a class with external dependencies
+- End to End - Drives and app through UI
+
+  
